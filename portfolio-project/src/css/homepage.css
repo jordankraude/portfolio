@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Lato&family=Lora&display=swap');
+
+header{
+  z-index: 1;
+}
+
+#navigation{
+  font-family: "Bungee Hairline", sans-serif;
+  color:white;
+  z-index: 2;
+}
+#navigation ul{
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  list-style: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+#navigation ul li a:hover {
+  color: black;
+  font-size: 26px;
+  background-color: white;
+  background-position: -100% 0;
+  font-weight: bolder;
+  
+  
+}
+#navigation ul li a {
+  color: white;
+  font-size: 20px;
+  display: block;
+  pointer-events: auto;
+  z-index: 2;
+  transition: background-position 1s ease;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, black, white);
+  background-repeat: no-repeat;
+  text-decoration: none;
+  background-clip: text;
+  border-radius: 50px;
+
+}
+
+#navigation ul li {
+  transition: background-color 0.3s;
+  
+
+}
+
+
+
+#starContainer {
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+
+}
+
+.star {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  animation: fallingStar 5s linear infinite;
+  top: -50%;
+}
+
+
+
+.rocket {
+  position: relative;
+  width: 160px;
+  height: 300px;
+  background-color: none;
+  border-radius: 10px;
+  overflow: hidden;
+  scale: .5;
+  animation: rocketAnimation 6s linear infinite;
+  transform-origin: center center;
+}
+
+.rocket-body {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 50% 50% 0 0%;
+}
+
+.rocket-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.rocket-flame {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 50px;
+  background-color: #f00;
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+}
+
+.flame {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 100px;
+  background-color: #ff9800;
+  border-radius: 50%;
+  opacity: 0.9;
+  animation: flameAnimation 1s infinite;
+  filter: blur(20px);
+}
+
+@keyframes flameAnimation {
+  0% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+.wing {
+  position: absolute;
+  bottom: 60px;
+  width: 50px;
+  height: 20px;
+  background-color: #ccc;
+
+}
+
+.wing.left {
+  left: 50%;
+  transform: translateX(-100%) rotate(-45deg);
+  border-radius: 50% 0;
+}
+
+.wing.right {
+  right: 50%;
+  transform: translateX(100%) rotate(45deg);
+  border-radius: 0 50%;
+}
+
+@keyframes rocketAnimation {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+
+#moon{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 15rem;
+  background-color: antiquewhite;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: 1;
+}
+
+.moonCrater {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  position: relative;
+  background-color: lightgray;
+}
+
+.crater1{
+  left: 140px;
+  top: 40px;
+  scale: .9;
+}
+.crater2{
+  left: 20px;
+  top: 10px;
+  scale: .7;
+}
+.crater3{
+  bottom: -20px;
+  left: 50px;
+}
+
+
+body{ overflow: hidden;
+background-color: black;}
+
+#intro {
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 300px;
+  text-align: center;
+  z-index: -1;
+}
+#intro h1{
+  font-size: 6rem;
+  font-family: 'Syne', sans-serif;
+}
+#intro h2{
+  font-size: 2em;
+  font-family: 'Bungee Hairline', sans-serif;
+}
+
+#design1{
+position:relative;
+height: 4px;
+width: 20%;
+background-color: white;
+top: -10px;
+left: 30%;
+}
+
+#design2{
+  position:relative;
+  height: 4px;
+  width: 20%;
+  background-color: white;
+  top: 20px;
+  left: 50%;
+}
+
+@keyframes fallingStar {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) rotateZ(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0vh, 98vh) ;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+
+  #intro {top: 60vh;}
+
+  #intro h1{
+    font-size: 3rem;
+  }
+
+  #intro h2{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 720px){
+  #navigation ul li a:hover {
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    background-position: -100% 0;
+    font-weight: bolder;
+    
+    
+  }
+  #navigation ul li a {
+    color: white;
+    font-size: 14px;
+    display: block;
+    pointer-events: auto;
+    z-index: 2;
+    transition: background-position 1s ease;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, black, white);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-clip: text;
+  }
+}
