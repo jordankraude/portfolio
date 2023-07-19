@@ -10,9 +10,9 @@ export default defineConfig({
     outDir: "../dist",
     rollupOptions: {
       input: {
-        login: resolve(__dirname, "src/login/index.html"),
+        // login: resolve(__dirname, "src/login/index.html"),
         main: resolve(__dirname, "src/index.html"),
-        cart: resolve(__dirname, "src/cart/index.html"),
+        // cart: resolve(__dirname, "src/cart/index.html"),
         game: resolve(__dirname, "src/gamepage/index.html"),
         gameSub: resolve(__dirname, "src/gamepage/games/index.html"),
         store: resolve(__dirname, "src/store/index.html"),

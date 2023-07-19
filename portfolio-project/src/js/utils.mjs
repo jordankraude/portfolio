@@ -1,4 +1,4 @@
-import AlertMessage from "../components/AlertMessage.svelte";
+// import AlertMessage from "../components/AlertMessage.svelte";
 import { writable } from "svelte/store";
 
 // wrapper for querySelector...returns matching element
@@ -52,14 +52,14 @@ export function getCartTotal() {
 }
 }
 
-export function alertMessage(message, scroll = true, duration = 3000) {
-  const alert = new AlertMessage({
-    target: document.querySelector("body"),
-    anchor: document.querySelector("main"),
-    props: {
-      message,
-    },
-  });
-  if (scroll) window.scrollTo(0, 0);
+// export function alertMessage(message, scroll = true, duration = 3000) {
+//   const alert = new AlertMessage({
+//     target: document.querySelector("body"),
+//     anchor: document.querySelector("main"),
+//     props: {
+//       message,
+//     },
+//   });
+//   if (scroll) window.scrollTo(0, 0);
 
-}
+// }

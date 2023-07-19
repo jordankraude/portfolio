@@ -3,4 +3,3 @@ import { getCartCount, getCartTotal } from "./utils.mjs";
 
 export const favoriteGames = writable([]);
 export const cartCount = writable(getCartCount());
-export let cartTotal = writable(getCartTotal(cartCount));
