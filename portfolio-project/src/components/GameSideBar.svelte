@@ -4,7 +4,6 @@
     import { getLocalStorage, setLocalStorage } from "../js/utils.mjs";
     import { writable } from 'svelte/store';
     import { favoriteGames } from '../js/stores.mjs';
-    export let category;
 
 
 let games = [];
