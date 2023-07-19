@@ -22,6 +22,12 @@ export async function findProductById(id) {
   
 }
 
+export async function getGameById(id){
+  const response = await fetch(baseURL + `game/${id}`);
+  const game = await convertToJson(response)
+  return game
+}
+
 export async function getData(category) {
   // console.log(baseURL)
   const response = await fetch(baseURL + `${category}`);

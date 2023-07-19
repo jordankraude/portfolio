@@ -26,7 +26,7 @@ header{
   background-color: white;
   background-position: -100% 0;
   font-weight: bolder;
-  
+
   
 }
 #navigation ul li a {
@@ -42,6 +42,7 @@ header{
   text-decoration: none;
   background-clip: text;
   border-radius: 50px;
+  padding: 0px 20px;
 
 }
 

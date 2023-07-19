@@ -30,6 +30,8 @@
   "type": "module",
   "dependencies": {
     "@ruffle-rs/ruffle": "^0.1.0-nightly.2023.7.18",
-    "jwt-decode": "^3.1.2"
+    "jwt-decode": "^3.1.2",
+    "particles.js": "^2.0.0",
+    "sass": "^1.63.6"
   }
 }

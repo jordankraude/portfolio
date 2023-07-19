@@ -14,10 +14,10 @@
     <h4>
         Connect With Me
     </h4>
-    <img src="https://freelogopng.com/images/all_img/1656997251linkedin-logo-black.png" alt="LinkedIn Logo" id="linkedInLogo">
+    <a href="https://www.linkedin.com/in/jordan-kraude" target="_blank"><img src="https://freelogopng.com/images/all_img/1656997251linkedin-logo-black.png" alt="LinkedIn Logo" id="linkedInLogo"></a>
     <div id="socialMediaLogos">
-        <img src="https://cdn-icons-png.flaticon.com/512/37/37409.png" alt="Facebook Logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" alt="Twitter Logo">
+        <a href="https://www.facebook.com/profile.php?id=100009557220516" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/37/37409.png" alt="Facebook Logo"></a>
+        <a href="https://twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" alt="Twitter Logo"></a>
     </div>
 
 </div>
