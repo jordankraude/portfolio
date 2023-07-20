@@ -222,7 +222,7 @@ background-color: black;}
   color: white;
   width: 100%;
   position: absolute;
-  top: 300px;
+  top: 250px;
   text-align: center;
   z-index: -1;
 }
@@ -298,6 +298,6 @@ left: 30%;
     background-image: linear-gradient(to right, black, white);
     background-repeat: no-repeat;
     text-decoration: none;
-    background-clip: text;
   }
+  #moon {scale: .8;}
 }
