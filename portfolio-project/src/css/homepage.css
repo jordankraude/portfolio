@@ -280,7 +280,7 @@ left: 30%;
 @media only screen and (max-width: 720px){
   #navigation ul li a:hover {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     background-color: white;
     background-position: -100% 0;
     font-weight: bolder;
@@ -300,4 +300,20 @@ left: 30%;
     text-decoration: none;
   }
   #moon {scale: .8;}
+}
+
+@media only screen and (max-width: 480px){
+  #navigation ul li a {
+    font-size: 12px;
+  }
+
+    #navigation ul li a:hover {
+      font-size: 14px;
+  }
+  #moon {scale: .5;
+  right: -5%;}
+  #intro {
+    scale: .8;
+    right: -10%;
+  }
 }

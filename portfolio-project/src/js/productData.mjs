@@ -27,6 +27,11 @@ export async function getGameById(id){
   const game = await convertToJson(response)
   return game
 }
+export async function getGraphicDesignById(id){
+  const response = await fetch(baseURL + `graphicDesign/${id}`);
+  const graphic = await convertToJson(response)
+  return graphic
+}
 
 export async function getData(category) {
   // console.log(baseURL)

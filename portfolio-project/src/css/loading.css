@@ -139,7 +139,7 @@ body {
 }
 .e-loadholder:after {
   width: 100px;
-  height: 200%;
+  height: 150%;
   -webkit-animation: outerRotate2 30s infinite linear;
   -moz-animation: outerRotate2 30s infinite linear;
   -o-animation: outerRotate2 30s infinite linear;
