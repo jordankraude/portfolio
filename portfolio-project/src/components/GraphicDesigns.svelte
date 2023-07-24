@@ -46,7 +46,7 @@ function generateDataUrl(pdfData) {
 </script>
 
 {#if isLoading}
-<h1 >I apologize for the wait time. Due to using free backend deploys through render, it requires some time for render to boot up after a long period of inactivity. Sorry for the inconvience. I could have just had paths through my local system to avoid this but I wanted to showcase the ability to create API's and connect to created databases through those APIs.</h1>
+<h1 class="loadingMessage">I apologize for the wait time. Due to using free backend deploys through render, it requires some time for render to boot up after a long period of inactivity. Sorry for the inconvience. I could have just had paths through my local system to avoid this but I wanted to showcase the ability to create API's and connect to created databases through those APIs.</h1>
 <div class="e-loadholder">
   <div class="m-loader">
     <span class="e-text">Loading</span>

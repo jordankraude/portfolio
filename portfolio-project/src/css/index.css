@@ -95,6 +95,10 @@ footer #contact {
   
   
 }
+#navigation ul li a:active{
+  color:white;
+  scale: 1.2;
+}
 #navigation ul li a {
   color: black;
   font-size: 20px;
@@ -205,6 +209,11 @@ text-decoration: underline;
   background-color: #000;
   color: white;
 }
+#gameSideBar div button:active{
+  background-color: white;
+  color: #000;
+
+}
 
 #gamedisplay{
   background-color: 222;
@@ -265,6 +274,9 @@ text-decoration: underline;
 .addToFavorites:hover{
   text-decoration: underline;
 }
+.addToFavorites:active{
+  scale:1.4;
+}
 
 .gamecard_name {
   font-size: 1.4em;
@@ -279,6 +291,13 @@ margin-bottom: 200px;}
 
 #game table {
   margin-bottom: 50px;
+}
+
+.loadingMessage{
+  max-width: 80vw;
+  text-align: center;
+  margin: auto auto;
+  margin-top: 50px;
 }
 
 .e-loadholder {
@@ -299,6 +318,7 @@ margin-bottom: 200px;}
   color: #000;
   width: 550px;
   margin: auto auto;
+  margin-bottom: 50px;
 }
 #graphicDesignDisplay{
   color: white;
@@ -315,6 +335,14 @@ margin-bottom: 200px;}
 .pdf-container embed{
   width: 500px;
   height: 600px;
+}
+#storeMessage{
+  font-size: 72px;
+  margin: auto auto;
+  margin-top: 200px;
+  color: white;
+  width: 100vw;
+  text-align: center;
 }
 
 

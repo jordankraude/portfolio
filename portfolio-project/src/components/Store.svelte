@@ -1,1 +1,1 @@
-<div></div>
+<h1 id="storeMessage">COMING SOON</h1>
