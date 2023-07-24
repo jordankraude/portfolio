@@ -228,8 +228,7 @@ text-decoration: underline;
 
 .game-list{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   font-family:"Bungee Hairline", sans-serif;
 }
 
@@ -291,6 +290,8 @@ margin-bottom: 200px;}
 
 #game table {
   margin-bottom: 50px;
+  background-color: white;
+  height: 80vh;
 }
 
 .loadingMessage{

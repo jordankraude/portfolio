@@ -27,6 +27,44 @@ export async function getGameById(id){
   const game = await convertToJson(response)
   return game
 }
+
+export async function getGameById2(id){
+  const response = await fetch(baseURL + `game/${id}`);
+  if (!response.ok) {
+    throw new Error('Failed to fetch game file.');
+  }
+
+
+
+  // Convert the response to blob format
+  const gameBlob = await response.blob();
+
+  // Create an object URL from the blob
+  const gameURL = URL.createObjectURL(gameBlob);
+  return gameURL
+}
+
+export async function getGameSWFFileData(gameId) {
+  try {
+    const response = await fetch(`https://portfolioapi-gsh3.onrender.com/game/${gameId}`, {
+      method: 'GET',
+      headers: {
+        Accept: 'application/x-shockwave-flash',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch the game SWF file.');
+    }
+
+    return await response.arrayBuffer();
+  } catch (error) {
+    console.error(error);
+    throw new Error('Failed to fetch the game SWF file.');
+  }
+}
+
+
 export async function getGraphicDesignById(id){
   const response = await fetch(baseURL + `graphicDesign/${id}`);
   const graphic = await convertToJson(response)

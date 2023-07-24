@@ -23,6 +23,7 @@
       try{
         const data = await getData(category);
         games.set(data);
+        console.log(data)
       }
       catch(err){
         console.error(err)
@@ -74,7 +75,7 @@ function addToFavorites(event) {
     <ul class="game-list">
       {#each $games as game}
           <li class="game-card" id={game._id}>
-            <a href="../gamepage/games/index.html?specificGame={game.gameSWFPath}">
+            <a href="../gamepage/games/index.html?specificGame={game.gameSWFName}">
               <h1 class="gamecard_name">{game.gameName}</h1>
               <img src={game.gameThumbnailPath} alt={game.gameAlt}>
             </a>
