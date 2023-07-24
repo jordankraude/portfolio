@@ -21,9 +21,9 @@
   <table width="100%" class="ex" cellspacing="0"> 
     <tr> 
       <td>
-        <object title="arcane" width="100%" height="600">
-          <param name="movie" value={$games}>
-          <embed  src={$games} width="50vw" height="50vh">
+        <object title="" width="100%" height="600">
+          <param name="movie" value={specificGame}>
+          <embed  src={specificGame} width="50vw" height="50vh">
         </object>
       </td> 
     </tr>
