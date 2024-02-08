@@ -22,7 +22,8 @@
 
       try{
         const data = await getData(category);
-        games.set(data);
+        let sortedData = sortGamesByName(data)
+        games.set(sortedData);
         console.log(data)
       }
       catch(err){
@@ -32,6 +33,20 @@
         isLoading = false;
       }
     });
+
+function sortGamesByName(data) {
+  return data.sort((a, b) => {
+    const gameNameA = a.gameName.toUpperCase(); // Convert to uppercase for case-insensitive sorting
+    const gameNameB = b.gameName.toUpperCase();
+    if (gameNameA < gameNameB) {
+      return -1;
+    }
+    if (gameNameA > gameNameB) {
+      return 1;
+    }
+    return 0;
+  });
+}
 
   async function runAddToFavorites(event) {
     const gameId = event.target.parentNode.id;
@@ -60,7 +75,7 @@ function addToFavorites(event) {
   
   
   {#if isLoading}
-  <h1 >I apologize for the wait time. Due to using free backend deploys through render, it requires some time for render to boot up after a long period of inactivity. Sorry for the inconvience. I could have just had paths through my local system to avoid this but I wanted to showcase the ability to create API's and connect to created databases through those APIs.</h1>
+  <h1 class="loadingMessage">I apologize for the wait time. Due to using free backend deploys through render, it requires some time for render to boot up after a long period of inactivity. Sorry for the inconvience!</h1>
   <div class="e-loadholder">
     <div class="m-loader">
       <span class="e-text">Loading</span>
@@ -79,7 +94,7 @@ function addToFavorites(event) {
               <h1 class="gamecard_name">{game.gameName}</h1>
               <img src={game.gameThumbnailPath} alt={game.gameAlt}>
             </a>
-            <h4 class="addToFavorites" on:mousedown={addToFavorites}>Add to Favorites</h4>
+            <h4 class="addToFavorites" style="margin-top: 10px;" on:mousedown={addToFavorites}>Add to Favorites</h4>
           </li>
 
       {/each}

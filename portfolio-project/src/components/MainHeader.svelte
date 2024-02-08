@@ -1,6 +1,9 @@
 <div class="header">
     <nav id="navigation">
         <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
           <li class="navEl">
             <a href="/school-projects/index.html?category=schoolProjects">School Projects</a>
           </li>
@@ -15,7 +18,7 @@
           </li>
         </ul>
       </nav>
-      <a href="/index.html">
+      <!-- <a href="/index.html">
       <div class="scale">
         <div class="hor">
           <div class="ver">
@@ -26,6 +29,6 @@
           </div>
         </div>
       </div>
-      </a>
+      </a> -->
 </div>
 

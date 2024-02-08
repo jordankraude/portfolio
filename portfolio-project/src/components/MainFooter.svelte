@@ -1,4 +1,4 @@
-<a href="/index.html">
+<!-- <a href="/index.html">
     <div class="scale">
       <div class="hor">
         <div class="ver">
@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-</a>
+</a> -->
 <div id="contact">
     <h4>
         Connect With Me

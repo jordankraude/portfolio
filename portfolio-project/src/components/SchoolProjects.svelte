@@ -79,7 +79,7 @@
     .website-container {
       display: flex;
       flex-direction: column;
-      height: 80vh; /* Set the height to the full viewport height */
+      height: 100vh; /* Set the height to the full viewport height */
       margin: auto auto;
       overflow: hidden;
       color: white;
@@ -111,6 +111,7 @@
       text-align: center;
       display: flex;
       align-items: flex-start;
+      flex-wrap: wrap;
       justify-content: center;
 
     }
@@ -120,10 +121,9 @@
       width: 120px;
       height: 50px;
       text-align: center;
-      color: white;
-      background: radial-gradient(circle at center, lightgray, black);
+      color: black;
       font-family: 'Lato', sans-serif ;
-      border-radius: 0 50% 0 50%;
+      border-radius: 20px;
     }
     .filter-buttons button:hover{
       scale: 1.2;
@@ -206,10 +206,7 @@
       font-size: 10px;
       height: 50px;
       text-align: center;
-      color: white;
-      background: radial-gradient(circle at center, lightgray, black);
       font-family: 'Lato', sans-serif ;
-      border-radius: 0 50% 0 50%;
       margin-bottom: 40px;
       z-index: 5;
     }

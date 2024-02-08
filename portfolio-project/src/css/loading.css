@@ -104,7 +104,7 @@ body {
   font-family: "Open Sans", sans-serif;
   width: 100vw;
   height: 100vh;
-  background: #222;
+  background: black;
 }
 
 .e-loadholder {
@@ -133,7 +133,7 @@ body {
   transform: translate(-51%, -50%);
   content: " ";
   display: block;
-  background: #222;
+  background: black;
   transform-origin: center;
   z-index: 0;
 }
@@ -175,7 +175,7 @@ body {
   transform: translate(-51%, -50%);
   content: " ";
   display: block;
-  background: #222;
+  background: black;
   transform-origin: center;
   z-index: -1;
 }
@@ -223,7 +223,7 @@ body {
   transform: translate(-51%, -50%);
   content: " ";
   display: block;
-  background: #222;
+  background: black;
   transform-origin: center;
   z-index: -1;
 }

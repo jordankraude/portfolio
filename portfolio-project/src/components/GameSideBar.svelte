@@ -40,7 +40,7 @@ $: {
 
 </script>
 
-<ul>
+<ul style="margin-left: 10px;">
     {#if favoriteGamesList.length > 0}
       {#each favoriteGamesList as game}
         <div id={game._id}>
@@ -53,4 +53,4 @@ $: {
     {:else}
       <p>No favorited Games</p>
     {/if}
-  </ul>
+</ul>
