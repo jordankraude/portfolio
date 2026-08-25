@@ -94,7 +94,7 @@ function addToFavorites(event) {
               <h1 class="gamecard_name">{game.gameName}</h1>
               <img src={game.gameThumbnailPath} alt={game.gameAlt}>
             </a>
-            <h4 class="addToFavorites" style="margin-top: 10px;" on:mousedown={addToFavorites}>Add to Favorites</h4>
+            <button type="button" class="addToFavorites" style="margin-top: 10px;" on:mousedown={addToFavorites}>Add to Favorites</button>
           </li>
 
       {/each}

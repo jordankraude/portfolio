@@ -57,12 +57,12 @@
           <div class="websiteHeader">
             <h1>{website.name}</h1><a href={website.url} target="_blank"><h1>Link to Page</h1></a>
           </div>
-          <iframe src={website.url} title={website.name} key={website.name} />
+          <iframe src={website.url} title={website.name} key={website.name}></iframe>
         </div>
       {:else}
         <div class="iframe-container hidden">
           <h1>{website.name}</h1>
-          <iframe src={website.url} title={website.name} key={website.name} />
+          <iframe src={website.url} title={website.name} key={website.name}></iframe>
         </div>
       {/if}
     {/each}
